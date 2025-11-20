@@ -13,16 +13,18 @@ To write a Python program that handles an **IndexError** when trying to access a
 ##  Program
 ```
 try:
-    a=int(input())
-    b=int(input())
-    print(a+b)
-except Exception:
-    print("cannot add integer with string")
+    L = eval(input())
+    print(L[4])
+
+except IndexError:
+    print("check index range")
+
     
 
 ```
 ## Output
-<img width="927" height="309" alt="image" src="https://github.com/user-attachments/assets/75b5bd4c-dd36-45b6-9c00-d48653de24ec" />
+<img width="696" height="204" alt="image" src="https://github.com/user-attachments/assets/722af3b2-ff79-45df-a4e1-3a4a7334fce4" />
+
 
 ## Result
 Thus, the Python program successfully demonstrates IndexError handling using a try–except block, preventing the program from crashing when an invalid list index is accessed.
